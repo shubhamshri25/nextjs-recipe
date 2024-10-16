@@ -17,7 +17,7 @@ export default function RecipeList({ recipeList }) {
                   <Card>
                     <CardContent className="bg-white rounded-md overflow-hidden shadow-md cursor-pointer hover:scale-[1.1] transition-all">
                       <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
-                        <img
+                        <img key={recipe.id}
                           src={recipe.image}
                           alt={recipe.name}
                           className="h-full w-full object-cover object-top"
