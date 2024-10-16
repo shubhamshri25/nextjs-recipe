@@ -31,7 +31,7 @@ export default function RecipeDetailsItem({ getRecipeDetails }) {
               <h3 className="text-lg font-bold text-gray-700">Ingredients</h3>
               <ul className="space-y-3 list-disc mt-4 pl-4 text-sm text-gray-700">
                 {getRecipeDetails?.ingredients.map((item) => (
-                  <li>{item}</li>
+                  <li key={item.id}>{item}</li>
                 ))}
               </ul>
             </div>
